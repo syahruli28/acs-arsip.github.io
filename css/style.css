@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+*::-moz-selection {
+  background-color: #117DAC;
+  color: #fff;
+}
+
+*::selection {
+  background-color: #117DAC;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+html::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #117DAC;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #117DAC;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+}
+.btn:hover {
+  background-color: #000;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1.5rem 6%;
+}
+.header .flex .logo img {
+  height: 4.5rem;
+}
+.header .flex .navbar a {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: #000;
+}
+.header .flex .navbar a:hover {
+  color: red;
+}
+.header .flex #menu-btn {
+  display: none;
+  font-size: 2.5rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.home-bg {
+  background: linear-gradient(90deg, rgba(134, 117, 84, 0.6), transparent 200%), url(../gambar/home.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-bg .home {
+  min-height: 70rem;
+  display: flex;
+  align-items: center;
+}
+.home-bg .home .content {
+  width: 60rem;
+}
+.home-bg .home .content h3 {
+  font-size: 3rem;
+  color: #000;
+}
+.home-bg .home .content p {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #000;
+  line-height: 2;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+  min-height: 70rem;
+}
+.about .image {
+  flex: 1 1 40rem;
+}
+.about .image img {
+  width: 100%;
+}
+.about .content {
+  flex: 1 1 40rem;
+}
+.about .content h3 {
+  font-size: 3.2rem;
+  color: #000;
+  padding-bottom: 1rem;
+}
+.about .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #666;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.visimisi-bg {
+  background: url(../gambar/visi-misi.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.visimisi-bg .visimisi {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 4rem;
+  min-height: 70rem;
+}
+.visimisi-bg .visimisi .content {
+  margin-top: 5rem;
+  flex: 1 1 40rem;
+  padding: 1rem 3rem;
+  background-color: #F1EFEF;
+  opacity: 0.8;
+}
+.visimisi-bg .visimisi .content h3 {
+  font-size: 3.2rem;
+  color: #000;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.visimisi-bg .visimisi .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.prinsip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  min-height: 70rem;
+}
+.prinsip .gambar {
+  background: url(../gambar/prinsip-kami.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 35rem;
+  height: 32rem;
+  flex: 1 1 40rem;
+  position: relative;
+}
+.prinsip .gambar .judul {
+  position: absolute;
+  padding: 1rem 3rem;
+  background-color: #F1EFEF;
+  opacity: 0.9;
+  top: 20%;
+}
+.prinsip .gambar .judul h3 {
+  font-size: 4rem;
+  color: #000;
+}
+.prinsip .content {
+  flex: 1 1 40rem;
+}
+.prinsip .content .poin {
+  margin: 2rem 0rem;
+}
+.prinsip .content .poin h4 {
+  font-size: 2.5rem;
+}
+.prinsip .content .poin p {
+  text-transform: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.layanan-bg {
+  background-color: #EEEBE8;
+}
+.layanan-bg .layanan {
+  padding: 10rem 0 10rem 0;
+  align-items: center;
+  min-height: 70rem;
+}
+.layanan-bg .layanan h3 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #000;
+}
+.layanan-bg .layanan .content-1 {
+  margin: 10rem 0 10rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.layanan-bg .layanan .content-1 .image {
+  flex: 1 1 30rem;
+}
+.layanan-bg .layanan .content-1 .image img {
+  width: 100%;
+}
+.layanan-bg .layanan .content-1 .content {
+  flex: 1 1 40rem;
+}
+.layanan-bg .layanan .content-1 .content h3 {
+  font-size: 2rem;
+  color: #000;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.layanan-bg .layanan .content-1 .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.layanan-bg .layanan .content-2 {
+  margin: 10rem 0 10rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.layanan-bg .layanan .content-2 .image {
+  flex: 1 1 30rem;
+}
+.layanan-bg .layanan .content-2 .image img {
+  width: 100%;
+}
+.layanan-bg .layanan .content-2 .content {
+  flex: 1 1 40rem;
+}
+.layanan-bg .layanan .content-2 .content h3 {
+  font-size: 2rem;
+  color: #000;
+  padding-bottom: 1rem;
+  text-align: right;
+}
+.layanan-bg .layanan .content-2 .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: none;
+  text-align: right;
+}
+
+.galeri {
+  min-height: 70rem;
+  padding-top: 10rem;
+}
+.galeri h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.galeri .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.galeri .box-container .box {
+  overflow: hidden;
+}
+.galeri .box-container .box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.galeri .box-container .box:hover img {
+  transform: scale(1.2);
+}
+
+.kontak-bg {
+  background-color: #117DAC;
+}
+.kontak-bg .kontak {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap-reverse;
+  gap: 4rem;
+  min-height: 55rem;
+}
+.kontak-bg .kontak .content {
+  margin-top: 15rem;
+  flex: 1 1 40rem;
+  padding: 2rem 3rem;
+  background-color: #fff;
+}
+.kontak-bg .kontak .content h4 {
+  font-size: 2rem;
+}
+.kontak-bg .kontak .content p {
+  line-height: 2;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+.kontak-bg .kontak .content h2 {
+  font-size: 5rem;
+  text-align: start;
+}
+
+.klien {
+  min-height: 35rem;
+}
+.klien h3 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.klien .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30rem;
+}
+.klien .box-container .box {
+  flex: 1 1 10rem;
+  overflow: hidden;
+}
+.klien .box-container .box img {
+  width: 100%;
+}
+
+.bantuan-bg {
+  background: linear-gradient(90deg, #B60007, transparent 210%), url(../gambar/prinsip-kami.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bantuan-bg .bantuan {
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.bantuan-bg .bantuan .teks {
+  flex: 1 1 40rem;
+}
+.bantuan-bg .bantuan .teks h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.bantuan-bg .bantuan .btn {
+  margin-left: auto;
+  border-radius: 1rem;
+}
+
+.footer-bg {
+  background: #117DAC;
+}
+.footer-bg .footer .box-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.footer-bg .footer .box-container .box {
+  flex: 1 1 30rem;
+}
+.footer-bg .footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+  text-transform: capitalize;
+}
+.footer-bg .footer .box-container .box a {
+  color: #fff;
+  display: block;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+.footer-bg .footer .box-container .box a:hover {
+  color: #B60007;
+}
+.footer-bg .footer .box-container .box a:hover i {
+  padding-right: 1.5rem;
+  color: #fff;
+}
+.footer-bg .footer .box-container .box iframe {
+  width: 100%;
+  height: 20rem;
+}
+.footer-bg .footer .credits {
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 10rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+.footer-bg .footer .credits span {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* media queries  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 0.2rem solid #000;
+    border-bottom: 0.2rem solid #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+  }
+  .header .flex #menu-btn {
+    display: inline-block;
+    transition: 0.2s linear;
+  }
+  .header .flex #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+  .header .flex .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .home-bg {
+    background: linear-gradient(90deg, rgba(211, 227, 215, 0.6), transparent 400%), url(../gambar/home.gif) no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+  .home-bg .home {
+    justify-content: center;
+  }
+  .home-bg .home .content {
+    text-align: center;
+    font-weight: bold;
+  }
+  .home-bg .home .content h3 {
+    color: #000;
+    font-size: 2.5rem;
+  }
+  .home-bg .home .content p {
+    color: #000;
+    font-size: 1.4rem;
+  }
+  .home-bg .home .content a {
+    font-size: 1.4rem;
+  }
+  .layanan-bg .layanan .content-1, .layanan-bg .layanan .content-2 {
+    padding: 2rem;
+  }
+  .layanan-bg .layanan .content-1 .content h3, .layanan-bg .layanan .content-2 .content h3 {
+    text-align: left;
+  }
+  .layanan-bg .layanan .content-2 {
+    flex-direction: column-reverse;
+    margin-bottom: -20rem;
+  }
+  .layanan-bg .layanan .content-2 .content p {
+    text-align: left;
+  }
+  .kontak-bg .kontak {
+    gap: 0;
+  }
+  .klien .box-container {
+    gap: 5rem;
+  }
+  .bantuan-bg .bantuan .btn {
+    margin: auto;
+  }
+}
+@media (max-width: 590px) {
+  .bantuan-bg .bantuan .teks {
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
